@@ -1,0 +1,94 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: SlateBlue; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #FFB3D9;
+    z-index: -1;
+}
+
+.triangle-topleft {
+	width: 0;
+	height: 25%;
+    top: 0;
+    left: 0;
+	border-top: 15vw solid slateblue; 
+	border-right: 25vw solid transparent;	
+    position: absolute;
+    z-index:0;		
+}
+
+.circle-block img {
+   
+    position: absolute; 
+    top: 2%; 
+    bottom: 2%;
+    left:  4%; 
+    text-align: left; 
+    border-radius: 50%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+   
+}
+
+
+.main-text-box {
+    position: absolute; 
+    top: 2%; 
+    bottom: 2%; 
+    right: 2%; 
+    text-align: center; 
+    font-size: 1.5vw; 
+    padding: 0 2rem 2rem 0; 
+    width: 70%; 
+}
+
+
+.left {
+
+    position: absolute; 
+    top: 40%; 
+    bottom: 2%; 
+    left: 2%; 
+    text-align: left; 
+    font-size: 1.5vw; 
+    padding: 0 2rem 2rem 0; 
+    width: 25%; 
+    
+}
+
+.right {
+    position: absolute;
+    top: 40%; 
+    bottom: 50%; 
+    right: 2%; 
+    text-align: left; 
+    font-size: 1.5vw; 
+    padding: 0 2rem 2rem 0; 
+    width: 70%; 
+}
+
+
+h2 {
+    position: relative; 
+}
+
+
+h2:after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 80%; 
+    height: 1px; 
+    background-color: SlateBlue; 
+}
